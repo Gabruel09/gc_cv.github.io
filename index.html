@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="estilo.css">
+    <title>Gabriel Cordova</title>
+</head>
+<body>
+    <div class="container">
+        <!---ENCABEZADO Y MENU-->
+        <header>
+            <h1 class="gradient-text">Gabriel</h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#sobremi" onclick="seleccionar()">Sobre mi</a>
+                <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+                <a href="#portafolio" onclick="seleccionar()">Portafolio</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+
+            <div id="iocn-nav" class="nav-repsonsive" onclick="mostrarOcultarMenu()"> 
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!--SECCION INICIO-->
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <p>Soy Gabriel Cordova</p>
+                    <h1 class="gradient-text">Diseñador Web</h1>
+                    <button>Contactame</button>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/foto.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---SECCION SOBRE MI-->
+        <section id="sobremi">
+            <div class="fila">
+                <div class="col info">
+                    <h3>Sobre mi</h3>
+                    <h2>Soy Diseñador Web</h2>
+                    <p>Mi nombre es Gabriel Cordova, soy un diseñador WEB, los conocimientos que tengo los he aprendido por mi cuenta,
+                        me considero una persona preparada para utilizar mis habilidades en actitud positiva, con voluntad y motivación, para
+                        aprender nuevas habilidades y poder tener buena aportacion en el ámbito en  el que me desarrollaré.
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="contenedor-image">
+                        <img src="img/yo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---SECCION CURRICULUM-->
+        <section id="curriculum">
+            <h3>Currículum</h3>
+            <div class="fila">
+                <div class="col">
+                    <p class="experiencia">Experiencia</p>
+                    <h2>Aprendizaje como <span class="txtEspecial">Diseñador</span></h2>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Fotografia</h4>
+                            <p>Nivel (89%)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Photoshop</h4>
+                            <p>Nivel (90%)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Html, Css, Java Script</h4>
+                            <p>Nivel(80%, 75%, 60%)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION PORTAFOLIO-->
+        <section id="porfolio">
+            <h3 class="portafolio">Portafolio</h3>
+            <div class="fila">
+                <div class="col">
+                    <div class="trabajo">
+                        <img src="img/burger.jpg">
+                        <a href="https://gabruel09.github.io/#"><p class="hamb">Proyecto hamburgueseria</p></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION CONTACTO-->
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="redes">
+                <a href="#">
+                    <i class="fa-brands fa-square-facebook gradient-text"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-square-instagram gradient-text"></i>
+                </a>
+            </div>
+            <form action="">
+                <div class="entrada">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="Nombre"> Correo</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="Nombre">Tema</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+
+</html>
